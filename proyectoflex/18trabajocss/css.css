@@ -1,0 +1,156 @@
+*{
+    margin-top: 0;
+    margin-left: 0;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(ORANGE, yellow);
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.x1{
+    text-shadow: 10px 10px 10px  black;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.texto-animado{
+    animation-name: Texto-bat;
+    animation-duration: 25S;
+    animation-iteration-count: infinite;
+    border: none;
+} 
+
+@keyframes Texto-bat{
+    from{
+        margin-left: 100%;
+        width: 200px;
+        background-color: yellow;
+        border: none;
+    }
+
+    to{
+        margin-left: -100%;
+        background-color: tomato;
+        color: antiquewhite;
+        border: none;
+    }
+}
+
+.rata{
+   
+    animation-name: imagen-recixe;
+    animation-duration: 10s;
+    animation-iteration-count:infinite
+}
+
+@keyframes imagen-recixe{
+    from{
+        width:50px;
+        height:50px;
+    }
+    to{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+.ball{
+    
+    background: linear-gradient(orange, purple);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    animation-name: ball-animate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ball-animate{
+    from{
+        transform: translateY(5px);
+    }
+    to{
+        transform: translateY(150px);
+    }
+}
+
+
+.lineas{
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    font-size: 24px;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+.texto-movil{
+    animation: texto-animado 5s steps(144) 1s normal both, cursor 0.5s steps(50) infiniti normal;
+    animation-duration: infinite;
+
+
+}
+
+@keyframes text-animado{
+    from{
+        width:0;
+    }
+    to{
+        width: 600px; 
+    }
+}
+
+@keyframes cursor{
+    from{
+        border-right-color: crimson;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+.lineas {
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    font-size: 24px;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+.texto-animado-dos {
+    animation: texto-animado-dos 5s steps(144) 1s normal both, cursor 0.5s steps(50) infinite normal;
+    animation-duration: infinite;
+}
+
+@keyframes texto-animado-dos {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 600px;
+    }
+}
+
+@keyframes cursor {
+    from {
+        border-right-color: red;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+
+
+}

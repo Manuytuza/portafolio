@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #9ECEFA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Fascinate', normal;
+    color: #87119A;
+    font-weight: 900;
+    font-size: 52px;
+    margin-left: 40px;
+    margin-top: 26px;
+    margin-bottom: 23px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 53px;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 24px;
+    color: #707070;
+}
+
+nav a:hover {
+    color: #87119A;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: Roboto, sans-serif;
+    color: #87119A;
+    font-size: 28px;
+    margin-left: 23px;
+    margin-top: 30px;
+    font-weight: 700;
+    border-left: solid 8px #87119A;
+    padding-left: 30px;
+}
+
+section p {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: #414141;
+    margin-left: 36px;
+    width: 1351px;
+    font-weight: 400;
+    margin-top: 23px;
+    margin-bottom: 12px;
+}
+
+.img-nosotros {
+    margin-left: 32px;
+    display: flex;
+}
+
+.img-nosotros img {
+    width: 410;
+    height: 251;
+    margin-top: 30px;
+    margin-right: 22px;
+    border-radius: 8px;
+    filter: drop-shadow(1px 1px 10px gray);
+}
+
+.servicios {
+    margin-top: 36px;
+    ;
+}
+
+.img-servicios {
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-servicios img {
+    margin: 45px;
+    width: 410px;
+    height: 251px;
+    border-radius: 8px;
+}
+
+.img-portafolio {
+    width: 1300px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.img-portafolio img {
+    width: 282px;
+    height: 251px;
+    border-radius: 8px;
+    margin-top: 50px;
+    margin-left: 36px;
+}
+
+.contacto {
+    margin-top: 60px;
+}
+
+.div-contacto {
+    display: flex;
+    margin-bottom: 340px;
+}
+
+.div-contacto img {
+    width: 892px;
+    height: 545px;
+    margin-top: 36px;
+    margin-left: 36px;
+}
+
+.div-contacto div {
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 60px;
+    margin-left: 35px;
+}
+
+.div-contacto div span {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #9ECEFA;
+    height: 61px;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot {
+    margin-left: 41px
+}
+
+footer p {
+    margin-right: 35px;
+}
+
+.autor {
+    color: #87119A;
+}
+
+@media only screen and (max-width:600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .logo {
+        font-weight: 700;
+        font-size: 36px;
+        align-self: flex-start;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 18px;
+        color: #707070;
+    }
+
+    section p {
+        width: 85%;
+        text-align: justify;
+    }
+
+    .img-nosotros {
+        margin-left: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img-nosotros img {
+        width: auto;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .img-servicios {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .img-servicios img {
+        width: auto;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .img-portafolio {
+        width: 50%;
+        margin-left: 22%;        
+    }
+
+    .div-contacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-contacto img {
+        width: 90%;
+        height: auto;
+        overflow: hidden;
+    }
+    .foot {
+        margin-left: 10px
+    }
+    
+    footer p {
+        margin-right: 10px;
+    }
+    footer {
+        width: 100%;
+        font-size: 12px;
+    }
+
+}

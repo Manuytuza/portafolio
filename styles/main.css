@@ -158,3 +158,13 @@
     border: 1px solid gray;
     border-radius: 8px;
   }
+
+  body {
+    height: 1500px;
+    background-image: url("https://acegif.com/wp-content/gif/outerspace-6.gif");
+    background-size: cover;
+    background-size: rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
